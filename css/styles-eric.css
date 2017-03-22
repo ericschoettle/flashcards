@@ -1,8 +1,12 @@
+.notfirst {
+  display: none;
+}
+
 .answer {
   display: none;
 }
 
-/*.clickable {
+*.clickable {
   cursor: pointer;
   color: #0088cc;
 }

@@ -1,31 +1,22 @@
 $(document).ready(function() {
   $('.next').click(function(){
-   $(this).parent().hide().next().show();//hide parent and show next
- });
+    $(this).parent().hide().next().show();//hide parent and show next
+    $(".question").show();
+    $(".answer").hide();
+  });
 
-$('.back').click(function(){
-   $(this).parent().hide().prev().show();//hide parent and show previous
- });
+  $('.back').click(function(){
+    $(this).parent().hide().prev().show();//hide parent and show previous
+    $(".question").show();
+    $(".answer").hide();
+  });
 
-
-
-
-
-
-
-
-
-
-  $("#start").click(function() {
+  $("p").click(function() {
     $(".question").toggle();
-    $(".well").next.show();
+    $(".answer").toggle();
   });
 
-  $(".well").click(function() {
-    $(".well").next.show();
-  });
-
-  $(".clickable").click(function() {
+  $(".answer, .question button").click(function() {
     $(".question").toggle();
     $(".answer").toggle();
   });
